@@ -1,0 +1,73 @@
+<svg width="300" height="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Define Gradients for the Token and the Letter -->
+  <defs>
+    <!-- Gold Gradient for Outer Circle -->
+    <radialGradient id="outerGoldGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#FFD700; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C49000; stop-opacity:1" />
+    </radialGradient>
+
+    <!-- Inner Shine Gradient -->
+    <radialGradient id="innerShineGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#FFF9E3; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD700; stop-opacity:1" />
+    </radialGradient>
+
+    <!-- Gradient for the "V" Text -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFDD44; stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Circle (Golden Border with Shine) -->
+  <circle cx="100" cy="100" r="90" fill="url(#outerGoldGradient)" stroke="#B8860B" stroke-width="5"/>
+
+  <!-- Inner Circle (Main Token Body with Shine) -->
+  <circle cx="100" cy="100" r="75" fill="url(#innerShineGradient)" stroke="#DAA520" stroke-width="5"/>
+
+  <!-- Border Decorations (Accent Lines) -->
+  <g stroke="#B8860B" stroke-width="4" opacity="0.8">
+    <line x1="100" y1="15" x2="100" y2="30"/>
+    <line x1="100" y1="185" x2="100" y2="170"/>
+    <line x1="15" y1="100" x2="30" y2="100"/>
+    <line x1="185" y1="100" x2="170" y2="100"/>
+    <line x1="35" y1="35" x2="50" y2="50"/>
+    <line x1="165" y1="165" x2="150" y2="150"/>
+    <line x1="35" y1="165" x2="50" y2="150"/>
+    <line x1="165" y1="35" x2="150" y2="50"/>
+  </g>
+
+  <!-- Decorative Dots (Around the Edge for Extra Detail) -->
+  <g fill="#FFF5BA">
+    <circle cx="100" cy="20" r="5" />
+    <circle cx="100" cy="180" r="5" />
+    <circle cx="20" cy="100" r="5" />
+    <circle cx="180" cy="100" r="5" />
+    <circle cx="45" cy="45" r="5" />
+    <circle cx="155" cy="155" r="5" />
+    <circle cx="45" cy="155" r="5" />
+    <circle cx="155" cy="45" r="5" />
+  </g>
+
+  <!-- Inner Circle Outline for Depth -->
+  <circle cx="100" cy="100" r="60" fill="none" stroke="#B8860B" stroke-width="3"/>
+
+  <!-- Glossy Highlight -->
+  <ellipse cx="100" cy="70" rx="45" ry="20" fill="rgba(255, 255, 255, 0.3)" />
+
+  <!-- Star Pattern in the Center for Added Intricacy -->
+  <polygon points="100,60 108,85 135,85 113,102 120,130 100,115 80,130 87,102 65,85 92,85"
+           fill="#FFD700" opacity="0.8" />
+
+  <!-- Letter "V" in the Center with Gradient and Shadow -->
+  <text x="100" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="60" fill="url(#textGradient)" font-weight="bold" style="filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.6));">
+    V
+  </text>
+
+  <!-- Inner Glow for Extra Effect -->
+  <circle cx="100" cy="100" r="50" fill="none" stroke="rgba(255, 215, 0, 0.5)" stroke-width="8"/>
+
+</svg>
+

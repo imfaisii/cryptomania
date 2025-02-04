@@ -1,0 +1,37 @@
+[31mError: There is already a server running! Use the option '--force' to stop it and start another one.[39m
+[31mError: There is already a server running! Use the option '--force' to stop it and start another one.[39m
+[31mError: There is already a server running! Use the option '--force' to stop it and start another one.[39m
+[1m[22m
+[1mL A R A V E L  E C H O  S E R V E R[22m
+[1m[22m
+[36mversion 1.6.3[39m
+[36m[39m
+[33m⚠ Starting server in DEV mode...[39m
+[33m[39m
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::2087
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.httpServer (/usr/local/lib/node_modules/laravel-echo-server/dist/server.js:73:20)
+    at /usr/local/lib/node_modules/laravel-echo-server/dist/server.js:39:31
+    at new Promise (<anonymous>)
+    at Server.serverProtocol (/usr/local/lib/node_modules/laravel-echo-server/dist/server.js:32:16)
+    at /usr/local/lib/node_modules/laravel-echo-server/dist/server.js:18:19
+    at new Promise (<anonymous>)
+    at Server.init (/usr/local/lib/node_modules/laravel-echo-server/dist/server.js:17:16)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 2087
+}
+
+Node.js v18.20.4
+[31mError: There is already a server running! Use the option '--force' to stop it and start another one.[39m

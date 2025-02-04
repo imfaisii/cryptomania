@@ -1,0 +1,18 @@
+[0;1;31m×[0m fail2ban.service - Fail2Ban Service
+     Loaded: loaded (/lib/systemd/system/fail2ban.service; enabled; vendor preset: enabled)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Tue 2024-11-05 19:48:05 UTC; 1s ago
+       Docs: man:fail2ban(1)
+    Process: 287582 ExecStart=/usr/bin/fail2ban-server -xf start [0;1;31m(code=exited, status=255/EXCEPTION)[0m
+   Main PID: 287582 (code=exited, status=255/EXCEPTION)
+        CPU: 52ms
+
+nov. 05 19:48:05 yusuf-desktop fail2ban-server[287582]: 2024-11-05 19:48:05,554 fail2ban.configreader   [287582]: ERROR   No section: 'Definition'
+nov. 05 19:48:05 yusuf-desktop fail2ban-server[287582]: 2024-11-05 19:48:05,554 fail2ban.configreader   [287582]: ERROR   No section: 'Definition'
+nov. 05 19:48:05 yusuf-desktop fail2ban-server[287582]: 2024-11-05 19:48:05,554 fail2ban.configreader   [287582]: ERROR   No section: 'Definition'
+nov. 05 19:48:05 yusuf-desktop fail2ban-server[287582]: 2024-11-05 19:48:05,554 fail2ban.configreader   [287582]: ERROR   No section: 'Definition'
+nov. 05 19:48:05 yusuf-desktop fail2ban-server[287582]: 2024-11-05 19:48:05,554 fail2ban.configreader   [287582]: ERROR   No section: 'Definition'
+nov. 05 19:48:05 yusuf-desktop fail2ban-server[287582]: 2024-11-05 19:48:05,554 fail2ban.configreader   [287582]: ERROR   No section: 'Definition'
+nov. 05 19:48:05 yusuf-desktop fail2ban-server[287582]: 2024-11-05 19:48:05,555 fail2ban                [287582]: ERROR   Failed during configuration: Have not found any log file for 11xvnx jail
+nov. 05 19:48:05 yusuf-desktop fail2ban-server[287582]: 2024-11-05 19:48:05,558 fail2ban                [287582]: ERROR   Async configuration of server failed
+nov. 05 19:48:05 yusuf-desktop systemd[1]: [0;1;39m[0;1;31m[0;1;39mfail2ban.service: Main process exited, code=exited, status=255/EXCEPTION[0m
+nov. 05 19:48:05 yusuf-desktop systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mfail2ban.service: Failed with result 'exit-code'.[0m

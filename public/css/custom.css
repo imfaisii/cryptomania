@@ -1,0 +1,279 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-size: .875rem;
+  margin-bottom: 60px;
+  background: transparent;
+}
+
+.main-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #E8EAF6;
+  display: none;
+}
+
+.main-footer p {
+  margin-bottom: 0;
+}
+
+.main-footer .fa.fa-heart {
+  color: #C62828;
+}
+
+.page-header {
+  border-bottom: 1px solid #8a8a8a;
+  border: none;
+}
+
+/* Navbar */
+.navbar-brand {
+  padding: .75rem 1rem;
+  font-size: 1rem;
+  display: none;
+}
+
+.navbar-nav .nav-link {
+  padding-right: .5rem;
+  padding-left: .5rem;
+  color: #6785ff !important;
+}
+
+.navbar {
+  background: transparent !important;
+  margin: 12px !important;
+  font-size: 1.2em !important;
+  margin-top: 0 !important;
+}
+
+.navbar .nav-item {
+  margin-right: 10px !important;
+}
+
+/* Boxes */
+.box {
+  display: block;
+  padding: 0;
+  min-height: 70px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+}
+
+.box > .box-icon > i,
+.box .box-content .box-text,
+.box .box-content .box-number {
+  color: #FFF;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.box > .box-icon {
+  border-radius: 2px 0 0 2px;
+  display: block;
+  float: left;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 70px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.box .box-content {
+  padding: 5px 10px;
+  margin-left: 70px;
+}
+
+.box .box-content .box-text {
+  display: block;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+}
+
+.box .box-content .box-number {
+  display: block;
+}
+
+.box .box-content .progress {
+  background: rgba(0, 0, 0, 0.2);
+  margin: 5px -10px 5px -10px;
+}
+
+.box .box-content .progress .progress-bar {
+  background-color: #FFF;
+}
+
+/* Log Menu */
+.log-menu .list-group-item.disabled {
+  cursor: not-allowed;
+}
+
+.log-menu .list-group-item.disabled .level-name {
+  color: #D1D1D1;
+}
+
+/* Log Entry */
+.stack-content {
+  color: lightgray;
+  font-family: consolas, Menlo, Courier, monospace;
+  white-space: pre-line;
+  font-size: .8rem;
+}
+
+/* Colors: Badge & Infobox */
+.badge.badge-env,
+.badge.badge-level-all,
+.badge.badge-level-emergency,
+.badge.badge-level-alert,
+.badge.badge-level-critical,
+.badge.badge-level-error,
+.badge.badge-level-warning,
+.badge.badge-level-notice,
+.badge.badge-level-info,
+.badge.badge-level-debug,
+.badge.empty {
+  color: #FFF;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.badge.badge-level-all,
+.box.level-all {
+  background-color: {{ log_styler()->color('all') }};
+}
+
+.badge.badge-level-emergency,
+.box.level-emergency {
+  background-color: {{ log_styler()->color('emergency') }};
+}
+
+.badge.badge-level-alert,
+.box.level-alert {
+  background-color: {{ log_styler()->color('alert') }};
+}
+
+.badge.badge-level-critical,
+.box.level-critical {
+  background-color: {{ log_styler()->color('critical') }};
+}
+
+.badge.badge-level-error,
+.box.level-error {
+  background-color: {{ log_styler()->color('error') }};
+}
+
+.badge.badge-level-warning,
+.box.level-warning {
+  background-color: {{ log_styler()->color('warning') }};
+}
+
+.badge.badge-level-notice,
+.box.level-notice {
+  background-color: {{ log_styler()->color('notice') }};
+}
+
+.badge.badge-level-info,
+.box.level-info {
+  background-color: {{ log_styler()->color('info') }};
+}
+
+.badge.badge-level-debug,
+.box.level-debug {
+  background-color: {{ log_styler()->color('debug') }};
+}
+
+.badge.empty,
+.box.empty {
+  background-color: {{ log_styler()->color('empty') }};
+}
+
+.badge.badge-env {
+  background-color: #6A1B9A;
+}
+
+.card {
+  background: #1c1b21;
+  color: white;
+}
+
+th, td {
+  border: none !important;
+}
+
+.badge.empty, .box.empty {
+  background: #4e4e4e;
+}
+
+input {
+  background: #29282e !important;
+  border: none !important;
+  border-radius: 500px !important;
+  padding: 10px 25px !important;
+  color: white !important;
+}
+
+* {
+  outline: none !important;
+}
+
+#search-btn {
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+h1 {
+  color: #6785ff;
+}
+
+.list-group-item {
+  background: transparent !important;
+}
+
+.list-group-item.active {
+  background: #007bff !important;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* source-sans-3-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/source-sans-3-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* source-sans-3-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/source-sans-3-v15-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
